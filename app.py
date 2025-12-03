@@ -82,7 +82,7 @@ else:
     st.subheader(f"🔍 Predicted Customer Segment: **{final_pred}**")
 
 
-    if final_pred == "High-Value Loyalist":
+    if final_pred == 1:
         st.info("This customer spends well and responds to campaigns.")
     else:
         st.warning("This customer is more value-conscious and needs targeted campaigns.")
@@ -92,3 +92,4 @@ else:
         st.session_state.answers = {}
         st.session_state.current_input = 0
         st.rerun()
+
